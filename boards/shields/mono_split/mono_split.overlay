@@ -6,7 +6,7 @@
         zmk,physical-layout = &physical_layout0;
         // Other chosen items
     };
-    
+
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
@@ -37,8 +37,8 @@
 
     encoder: encoder {
         compatible = "alps,ec11";
-        a-gpios = <gpio1 07 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <gpio1 01 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&gpio1 07 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio1 01 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
         status = "disabled";
     };
