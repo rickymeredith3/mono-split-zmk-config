@@ -1,3 +1,6 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
 / {
     behaviors {
         hm: homerow_mods {
@@ -13,6 +16,7 @@
         compatible = "zmk,keymap";
 
         colemak_dh {
+            display-name = "Defualt";
             // -------------------------------------------------------------------------------------------------------------------
             // |   Q   |   W   |   F   |   P   |   B   |             |   J   |   L   |   U   |   Y   |   ;   |
             // | A/ALT | R/CTRL| S/CMD |T/SHIFT|   G   |             |   M   |   N   |   E   |   I   |   O   |
@@ -29,6 +33,7 @@
         };
 
         num_sym {
+            display-name = "Num Sym";
             // -------------------------------------------------------------------------------------------------------------------
             // |   Q   |   W   |   F   |   P   |   B   |             |   J   |   L   |   U   |   Y   |   ;   |
             // | A/ALT | R/CTRL| S/CMD |T/SHIFT|   G   |             |   M   |   N   |   E   |   I   |   O   |
@@ -40,7 +45,7 @@
                 &kp X       &kp C       &kp D       &kp V        &kp Z      &kp C_PLAY_PAUSE     &kp N0     &kp N0         &kp N1       &kp N2       &kp N3
                                                     &kp X        &kp TAB  &ht CAPS ESC &kp BSPC  &ht ENTER SPACE &kp X
             >;
-            
+
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
