@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <mono_split-layouts.dtsi>
 
 / {
     chosen {
@@ -62,11 +63,12 @@
         >;
     };
 
-    &encoder {
-        status = "okay";
-    };
+};
 
-    &physical_layout0 {
-        transform = <&matrix_transform0>;
-    };
+&encoder {
+    status = "okay";
+};
+
+&physical_layout0 {
+    transform = <&matrix_transform0>;
 };
