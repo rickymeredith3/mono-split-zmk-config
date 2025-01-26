@@ -1,5 +1,4 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <mono-split-zmk-config/boards/shields/mono_split-layouts.dtsi>
 
 / {
     chosen {
