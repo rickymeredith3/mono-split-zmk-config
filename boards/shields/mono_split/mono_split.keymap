@@ -11,7 +11,6 @@
 
     keymap {
         compatible = "zmk,keymap";
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
         colemak_dh {
             // -------------------------------------------------------------------------------------------------------------------
@@ -25,6 +24,8 @@
                 &kp X       &kp C       &kp D       &kp V        &kp Z      &kp C_PLAY_PAUSE     &kp K      &kp H       &kp COMMA   &kp DOT     &kp KP_SLASH
                                                     &kp X        &kp TAB  &ht CAPS ESC &kp BSPC  &ht ENTER SPACE &kp X
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         num_sym {
@@ -39,6 +40,8 @@
                 &kp X       &kp C       &kp D       &kp V        &kp Z      &kp C_PLAY_PAUSE     &kp N0     &kp N0         &kp N1       &kp N2       &kp N3
                                                     &kp X        &kp TAB  &ht CAPS ESC &kp BSPC  &ht ENTER SPACE &kp X
             >;
+            
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
  };
