@@ -4,7 +4,6 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            quick-tap-ms = <-1>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -24,6 +23,20 @@
                 &kp Q       &kp W       &kp F       &kp P        &kp B                           &kp J      &kp L       &kp U       &kp Y       &kp SEMICOLON   
                 &hm LALT A  &hm LCTRL R &hm LGUI S  &hm LSHIFT T &kp G                           &kp M      &hm RALT N  &hm RCTRL E &hm RGUI I  &hm RSHIFT O
                 &kp X       &kp C       &kp D       &kp V        &kp Z      &kp C_PLAY_PAUSE     &kp K      &kp H       &kp COMMA   &kp DOT     &kp KP_SLASH
+                                                    &kp X        &kp TAB  &ht CAPS ESC &kp BSPC  &ht ENTER SPACE &kp X
+            >;
+        };
+
+        num_sym {
+            // -------------------------------------------------------------------------------------------------------------------
+            // |   Q   |   W   |   F   |   P   |   B   |             |   J   |   L   |   U   |   Y   |   ;   |
+            // | A/ALT | R/CTRL| S/CMD |T/SHIFT|   G   |             |   M   |   N   |   E   |   I   |   O   |
+            // |   X   |   C   |   D   |   V   |   Z   |             |   K   |   H   |   ,   |   .   |   /   |
+            //                         |   F   |  TAB  |  ESC | BSPC | SPACE |   F   |
+            bindings = <
+                &kp Q       &kp W       &kp F       &kp P        &kp B                           &kp LBRC   &kp RBRC       &kp N7       &kp N8       &kp N9       
+                &hm LALT A  &hm LCTRL R &hm LGUI S  &hm LSHIFT T &kp G                           &kp LBKT   &hm RALT RBKT  &hm RCTRL N4 &hm RGUI N5  &hm RSHIFT N6
+                &kp X       &kp C       &kp D       &kp V        &kp Z      &kp C_PLAY_PAUSE     &kp N0     &kp N0         &kp N1       &kp N2       &kp N3
                                                     &kp X        &kp TAB  &ht CAPS ESC &kp BSPC  &ht ENTER SPACE &kp X
             >;
         };
