@@ -18,7 +18,7 @@
 
         colemak_dh {
             display-name = "Defualt";
-            // -------------------------------------------------------------------------------------------------------------------
+            // -----------------------------------------------------------------------------------------------
             // |   Q   |   W   |   F   |   P   |   B   |             |   J   |   L   |   U   |   Y   |   ;   |
             // | A/ALT | R/CTRL| S/CMD |T/SHIFT|   G   |             |   M   |   N   |   E   |   I   |   O   |
             // |   X   |   C   |   D   |   V   |   Z   |             |   K   |   H   |   ,   |   .   |   /   |
@@ -30,12 +30,12 @@
                                                     &mo 1        &kp TAB  &hm CAPS ESC &kp BSPC  &hm ENTER SPACE &mo 2
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_U>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         num_sym {
             display-name = "Num Sym";
-            // -------------------------------------------------------------------------------------------------------------------
+            // -----------------------------------------------------------------------------------------------
             // |   Q   |   W   |   F   |   P   |   B   |             |   J   |   L   |   U   |   Y   |   ;   |
             // | ~/ALT | R/CTRL| S/CMD |T/SHIFT|   G   |             |   M   |   N   |   E   |   I   |   O   |
             // |   X   |   C   |   D   |   V   |   Z   |             |   K   |   H   |   ,   |   .   |   /   |
@@ -47,12 +47,12 @@
                                                     &tog 1        &kp TAB  &hm CAPS ESC &kp BSPC  &hm ENTER SPACE &kp N0
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         function {
             display-name = "Func";
-            // -------------------------------------------------------------------------------------------------------------------
+            // -----------------------------------------------------------------------------------------------
             // |   Q   |   W   |   F   |   P   |   B   |             |   J   |   L   |   U   |   Y   |   ;   |
             // | A/ALT | R/CTRL| S/CMD |T/SHIFT|   G   |             |   M   |   N   |   E   |   I   |   O   |
             // |   X   |   C   |   D   |   V   |   Z   |             |   K   |   H   |   ,   |   .   |   /   |
@@ -64,7 +64,7 @@
                                                     &tog 2        &kp TAB  &hm CAPS ESC &kp BSPC  &hm ENTER SPACE &kp X
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
     };
  };
