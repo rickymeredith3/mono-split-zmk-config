@@ -7,7 +7,7 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -25,12 +25,12 @@
             //                         |   F   |  TAB  |  ESC | BSPC | SPACE |   F   |
             bindings = <
                 &kp Q       &kp W       &kp F       &kp P        &kp B                           &kp J      &kp L       &kp U       &kp Y       &kp SEMICOLON   
-                &hm LALT A  &hm LCTRL R &hm LGUI S  &hm LSHIFT T &kp G                           &kp M      &hm RALT N  &hm RCTRL E &hm RGUI I  &hm RSHIFT O
-                &kp X       &kp C       &kp D       &kp V        &kp Z      &kp C_PLAY_PAUSE     &kp K      &kp H       &kp COMMA   &kp DOT     &kp KP_SLASH
+                &hm LALT A  &hm LCTRL R &hm LGUI S  &hm LSHIFT T &kp G                           &kp M      &hm RSHIFT N  &hm RGUI E &hm RCTRL I  &hm RALT O
+                &kp X       &kp C       &kp D       &kp V        &kp Z      &kp C_PLAY_PAUSE     &kp K      &kp H       &kp COMMA   &kp DOT     &kp SLASH
                                                     &mo 1        &kp TAB  &hm CAPS ESC &kp BSPC  &hm ENTER SPACE &mo 2
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_U>;
         };
 
         num_sym {

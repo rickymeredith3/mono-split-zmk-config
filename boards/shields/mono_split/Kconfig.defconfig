@@ -1,0 +1,7 @@
+if SHIELD_MONO_SPLIT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "Ricky's Board"
+
+endif
