@@ -42,7 +42,7 @@
             //                         |   L1  |  TAB  |  ESC | BSPC | SPACE |   L2  |
             bindings = <
                 &kp Q       &kp W       &kp F       &kp P        &kp B                           &kp LBRC   &kp RBRC       &kp N7       &kp N8       &kp N9       
-                &hm LALT GRAVE  &hm LCTRL BSLSH &hm LGUI EQUAL  &hm LSHIFT MINUS &kp X           &kp LBKT   &hm RALT RBKT  &hm RCTRL N4 &hm RGUI N5  &hm RSHIFT N6
+                &hm LALT GRAVE  &hm LCTRL BSLH &hm LGUI EQUAL  &hm LSHIFT MINUS &kp X           &kp LBKT   &hm RALT RBKT  &hm RCTRL N4 &hm RGUI N5  &hm RSHIFT N6
                 &kp X       &kp C       &kp D       &kp V        &kp Z      &kp C_PLAY_PAUSE     &kp SQT     &kp N0         &kp N1       &kp N2       &kp N3
                                                     &tog 1        &kp TAB  &hm CAPS ESC &kp BSPC  &hm ENTER SPACE &kp N0
             >;
