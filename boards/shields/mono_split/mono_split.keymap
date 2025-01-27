@@ -42,8 +42,8 @@
             // |   X   |   C   |   D   |   V   |   Z   |             |   K   |   H   |   ,   |   .   |   /   |
             //                         |   L1  |  TAB  |  ESC | BSPC | SPACE |   L2  |
             bindings = <
-                &kp Q       &kp W       &kp F       &kp P        &kp B                           &kp LBRC   &kp RBRC       &kp N7       &kp N8       &kp N9       
-                &hm LALT GRAVE  &hm LCTRL BSLH &hm LGUI EQUAL  &hm LSHIFT MINUS &kp X           &kp LBKT   &hm RALT RBKT  &hm RCTRL N4 &hm RGUI N5  &hm RSHIFT N6
+                &kp N1       &kp N2       &kp N3       &kp N4        &kp N5                 &kp N6       &kp N7       &kp N8       &kp N9   &kp N0  
+                &hm LALT GRAVE  &hm LCTRL BSLH &hm LGUI EQUAL  &hm LSHIFT MINUS &kp X           &kp LBKT   &hm RSHIFT RBKT  &hm RGUI N4 &hm RCTRL N5  &hm RALT SQT
                 &kp X       &kp C       &kp D       &kp V        &kp Z      &kp C_PLAY_PAUSE     &kp SQT     &kp N0         &kp N1       &kp N2       &kp N3
                                                     &tog 1        &kp TAB  &hm CAPS ESC &kp BSPC  &hm ENTER SPACE &kp N0
             >;
@@ -60,12 +60,29 @@
             //                         |   F   |  TAB  |  ESC | BSPC | SPACE |   F   |
             bindings = <
                 &out OUT_USB  &out OUT_BLE  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0                          &kp F1   &kp F2       &kp F3       &kp F5       &kp F12       
-                &bt BT_CLR  &none &bt BT_DISC 2 &bt BT_DISC 1 &bt BT_DISC 0                           &kp LEFT   &kp RIGHT  &kp UP &kp DOWN  &none
-                &kp X       &kp C       &kp D       &kp V        &kp Z      &kp C_PLAY_PAUSE     &kp C_VOL_DN     &kp C_VOL_UP         &kp C_PREV       &kp C_PLAY_PAUSE     &kp C_NEXT
-                                                    &tog 2        &kp TAB  &hm CAPS ESC &kp BSPC  &hm ENTER SPACE &kp X
+                &bt BT_CLR  &none &bt BT_DISC 2 &bt BT_DISC 1 &bt BT_DISC 0                           &kp LEFT   &kp DOWN  &kp UP &kp RIGHT  &none
+                &kp X       &kp C       &kp D       &kp V        &kp Z      &kp C_PLAY_PAUSE          &kp C_PREV       &kp C_PLAY_PAUSE     &kp C_NEXT  &kp C_VOL_DN     &kp C_VOL_UP
+                                                    &to 3        &kp TAB  &hm CAPS ESC &kp BSPC  &hm ENTER SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
+
+        gaming {
+            display-name = "Gaming";
+            // -----------------------------------------------------------------------------------------------
+            // |   Q   |   W   |   F   |   P   |   B   |             |   J   |   L   |   U   |   Y   |   ;   |
+            // | A/ALT | R/CTRL| S/CMD |T/SHIFT|   G   |             |   M   |   N   |   E   |   I   |   O   |
+            // |   X   |   C   |   D   |   V   |   Z   |             |   K   |   H   |   ,   |   .   |   /   |
+            //                         |   F   |  TAB  |  ESC | BSPC | SPACE |   F   |
+            bindings = <
+                &kp L       &kp Q  &kp W  &kp E &kp R                          &kp F1  &kp L  &kp U       &kp Y       &kp SEMICOLON   
+                &kp TAB     &KP A  &KP S  &KP D &kp F                          &kp H   &hm RSHIFT N  &hm RGUI E &hm RCTRL I  &hm RALT O
+                &kp LSHIFT  &kp X  &kp C  &kp V &kp Z      &kp C_PLAY_PAUSE    &kp G   &kp H       &kp COMMA   &kp DOT     &kp SLASH
+                                          &kp 1 &kp SPACE  &none &kp LALT(TAB) &kp ESC &to 0
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        }
     };
  };
