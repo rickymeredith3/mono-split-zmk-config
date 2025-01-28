@@ -76,10 +76,10 @@
             // |   X   |   C   |   D   |   V   |   Z   |             |   K   |   H   |   ,   |   .   |   /   |
             //                         |   F   |  TAB  |  ESC | BSPC | SPACE |   F   |
             bindings = <
-                &kp L       &kp Q  &kp W  &kp E &kp R                          &kp F1  &kp L  &kp U       &kp Y       &kp SEMICOLON   
+                &kp ESC       &kp Q  &kp W  &kp E &kp R                          &kp F1  &kp L  &kp U       &kp Y       &kp SEMICOLON   
                 &kp TAB     &kp A  &kp S  &kp D &kp F                          &kp H   &hm RSHIFT N  &hm RGUI E &hm RCTRL I  &hm RALT O
-                &kp LSHIFT  &kp X  &kp C  &kp V &kp Z      &kp C_PLAY_PAUSE    &kp G   &kp H       &kp COMMA   &kp DOT     &kp SLASH
-                                          &kp N1 &kp SPACE &none &kp LA(TAB) &kp ESC &to 0
+                &kp LSHIFT  &kp Z &kp X  &kp L &kp V      &kp C_PLAY_PAUSE    &kp G   &kp H       &kp COMMA   &kp DOT     &kp SLASH
+                                          &kp C &kp SPACE &kp B &kp LA(TAB) &kp ESC &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
