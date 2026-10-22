@@ -43,10 +43,10 @@
             // |   X   |   C   |   D   |   V   |   Z   |             |   K   |   H   |   ,   |   .   |   /   |
             //                         |   F   |  TAB  |  ESC | BSPC | SPACE |   F   |
             bindings = <
-                &kp Q       &kp W       &kp F       &kp P        &kp B                           &kp J      &kp L       &kp U       &kp Y       &kp SEMICOLON   
-                &hm LALT A  &hm LCTRL R &hm LGUI S  &hm LSHIFT T &kp G                           &kp M      &hm RSHIFT N  &hm RGUI E &hm RCTRL I  &hm RALT O
-                &kp X       &kp C       &kp D       &kp V        &kp Z          &to 0            &kp K      &kp H       &kp COMMA   &kp DOT     &kp SLASH
-                                                    &mo 3        &kp TAB  &hm CAPS ESC &kp BSPC  &hm ENTER SPACE &mo 4
+                &trans   &trans   &trans   &trans   &trans                     &trans   &trans   &trans   &trans   &trans   
+                &trans   &trans   &trans   &trans   &trans                     &trans   &trans   &trans   &trans   &trans   
+                &trans   &trans   &trans   &trans   &trans          &to 0      &trans   &trans   &trans   &trans   &trans   
+                                           &trans   &trans   &trans &trans     &trans   &trans   
             >;
 
             sensor-bindings = <&inc_dec_kp SCRL_DOWN SCRL_UP>;
